@@ -1,0 +1,298 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  background-image: linear-gradient(#e8f0ff 0%), white 52.8%;
+  min-height: 100vh;
+  
+}
+
+
+body {
+  background: #ffffff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 10;
+}
+
+a {
+  font-style: normal;
+  text-decoration: solid;
+  color: black;
+}
+
+.btn-outline-primary{
+  border-radius: 0px;
+  border-color: #634e4e;
+  color: black;
+}
+
+.btn-outline-primary:hover{
+  background-color: rgb(183, 183, 167);
+  color: white;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: var(--bs-heading-color);
+}
+
+
+.navbar{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: white;
+  border-bottom: 1px solid #222E50;
+}
+
+div.container {
+  padding-left:0px;
+}
+
+a.navbar-brand{
+  padding-left: 0px;
+}
+
+
+/* NAVBAR CUSTOMISATION*/
+
+.navbar-brand {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+
+.navbar-toggler {
+  border: none;
+  align-items: end;
+}
+
+
+.welcome-section{
+  display: flex;
+  justify-content: center;
+  padding: 150px 2rem 50px 2rem;
+  font-size: 1rem;
+}
+
+.date-line{
+  color:#5c5c5c;
+  font-size: 17px;
+}
+
+.header .lead {
+  max-width:620px;
+}
+/* container */
+.blog-holder {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 85vw;
+  grid-gap: 10px;
+  padding: 150px 2rem 7rem 2rem;
+  padding-top: 0;
+  margin-top: 0;
+  align-items: center;
+}
+
+/* columns */
+.blog-post{
+  display:flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding:2rem;
+  border: solid 1px;
+  min-height: 700px;
+}
+
+/* .blog-post:hover{
+ border: solid 3px rgb(217, 117, 36);
+} */
+
+
+.blog-post-text-holder{
+  background-color: #ffffff;
+}
+
+.article-header{
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 100px;
+  
+}
+
+.side-title{
+  position:sticky;
+  top: 20px;
+  z-index: 10;
+}
+
+.blog-card-img{
+  /* max-width: 100%;
+  min-width: 20%;
+  max-height: 30%; */
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.blog-card-image-holder{
+  display:flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  max-width: 100%;
+}
+
+.blog-card-heading{
+  color: rgb(0, 0, 0);
+  padding-left: 0px;
+  padding-top: 2rem;
+  
+}
+
+/* tablet breakpoint */
+@media (max-width:1000px) {
+  .blog-holder {
+      display: grid;
+      grid-auto-rows: 1fr;
+      grid-template-columns: auto;
+  }
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding-left: 30px;
+  color: white;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+
+a{
+padding: 20px;
+}
+.menu-items{
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*BODY */
+
+
+
+.gallery-section{
+  display: flexbox;
+  padding: 100px;
+}
+
+
+/* MY FORMATTING MY FORMATTING */
+
+.article{
+    display: grid;
+    grid-template-columns: 30vw 70%;
+    padding: 7rem;
+    height: 95vh
+}
+
+.article-text-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem 7rem 1rem 0rem;
+}
+
+.article-solo-image{
+  max-width: 100%;
+  max-height: 75vh;
+  object-fit: cover;
+  padding: 0rem 0rem 3rem 0rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gallery-grid{
+  padding: 50px;
+}
+
+.article-headline{
+  display: flex;
+  margin-left: 7rem;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 10rem;
+}
+
+
+
+.image-expand:hover {
+    transform: scale(3);
+    transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+    display: flexbox;
+    justify-content: center;
+  
+
+}
+
+.image-expand {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bikes{
+  position: sticky;
+  top:100px;
+}
+
+.othershit{
+  position: sticky;
+}
+
+
+/* Swiper slides */
+
+.swiperhold{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 3rem;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: cover;
+  width: 100%;
+  height: 100%;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  object-fit: cover;
+}
+
+
